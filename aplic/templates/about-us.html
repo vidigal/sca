@@ -1,0 +1,31 @@
+{% extends 'base.html'  %}
+{% load static %}
+{% block content %}
+    <!-- Start Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 offset-lg-2 col-md-12 col-12">
+                    <div class="breadcrumbs-content">
+                        <h1 class="page-title">About Us</h1>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard dummy text</p>
+                    </div>
+                    <ul class="breadcrumb-nav">
+                        <li><a href="{% url 'index' %}">Home</a></li>
+                        <li>About Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumbs -->
+
+    <!-- Features Achivement Start -->
+        {% include 'achivement-area.html' %}
+    <!-- Achivement Section End -->
+
+    <!-- Clients Section Start -->
+      {% include 'clients-area.html' %}
+    <!-- Clients Section End -->
+  {% endblock %}
